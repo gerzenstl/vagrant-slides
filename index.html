@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=1024" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>Vagrant for the People!</title>
+
+  <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+  <meta name="author" content="Bartek Szopka" />
+
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+  <link href="css/impress-demo.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+
+  <link rel="shortcut icon" href="favicon.png" />
+</head>
+  <body class="impress-not-supported">
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+    </div>
+
+    <div id="impress">
+      <div class="step slide cover-slides">
+        <div class="cover-slides">        
+          <q><h1 class="center">Vagrant for the people!</h1></q>
+          <q><p id="slides-author" class="center">Luis Gerzenstein - @gerzenstl</p></q>
+        </div>
+      </div>
+      
+      <div class="step slide" data-y="1000">
+        <div class="slide-title">Antes de comenzar...</div>
+        <q><p>First, some questions.<p></q>
+      </div>
+      
+      <div class="step slide" data-x="1500">
+        <div class="slide-title">Vagrant</div>
+        <q><p>“Vagrant is a tool for building complete development environments. With an easy-to-use workflow and focus on automation.”<p></q>
+      </div>
+      
+      <div class="step slide" data-x="3000">
+        <div class="slide-title">Vagrant</div>
+        <ul>
+          <li class="dot"><p>Started in January 2010 by Mitchell Hashimoto.</p></li>
+          <li class="dot"><p>Manage virtual environments on an automated way.</p></li>
+          <li class="dot">
+            <p>It uses standard technologies:</p>
+            <ul>
+              <li><p>Supports VirtualBox, VMware, AWS...</p></li>
+              <li><p>Provisioning available with shell scripts, Chef y Puppet.</p></li>
+            </ul>
+          </li>
+          <li class="dot"><p>Getting very popular among Devs, Sysadmin and DevOps.</p></li>
+          <li class="dot"><p>Open source project. MIT license.</p></li>
+          <li class="dot"><p>Good documentation.</p></li>
+          <li class="dot"><p>Great support from community.</p></li>
+        </ul>
+      </div>
+      
+      <div class="step slide" data-x="3000" data-y="1000">
+        <div class="slide-title">Vargant</div>
+        <img class="slide-img meme" src="img/meme-inception.jpg" alt="Vagrant workflow" title="Vagrant workflow">
+      </div>
+      
+      <div class="step slide wide-diagram" data-x="3000" data-y="2000">
+        <img class="slide-img vagrant-workflow" src="img/vagrant-provision-workflow_770.png" alt="Vagrant workflow" title="Vagrant workflow">
+      </div>
+      
+      <div class="step slide wide-diagram" data-x="3000" data-y="3000">
+        <img class="slide-img vagrant-workflow" src="img/vagrant-normal-workflow_770.png" alt="Vagrant workflow" title="Vagrant workflow">
+      </div>
+      
+      <div class="step slide wide-diagram" data-x="3000" data-y="4000">
+        <img class="slide-img vagrant-workflow" src="img/vagrant-workflow2_770.png" alt="Vagrant workflow" title="Vagrant workflow">
+      </div>
+
+      <div class="step slide" data-x="4500">
+        <div class="slide-title">Vagrant</div>
+        <p class="slide-subtitle">For Developers:</p>
+        <ul>
+          <li class="dot"><p>Allows you to have consistent environments (using VMs).</p></li>
+          <li class="dot"><p>Environments isolated from the host machine. Nothing that is installed on your (real) computer could be affected (browsers, IDEs, etc.).</p></li>
+          <li class="dot"><p>Independent from the OS you have installed on the host machine (well, almost).</p></li>
+          <li class="dot"><p>Everyone on a team share the same settings on the environment for a project.</p></li>
+          <li class="dot"><p>Manage multiple environments at same time.</p></li>
+          <li class="dot"><p>Almost all interaction is done through the command-line interface.</p></li>
+          <li class="dot"><p>Portable environments.</p></li>
+        </ul>
+      </div>
+
+      <div class="step slide" data-x="6000">
+        <div class="slide-title">Vagrant</div>
+        <p class="slide-subtitle">For SysAdmins/DevOps:</p>
+        <ul>
+          <li class="dot"><p>Allows you to have consistent environments (using VMs).</p></li>          
+          <li class="dot"><p>Wide set of options for tools: shell scripts, Chef cookboks, VM and more (local servers, AWS).</p></li>
+          <li class="dot"><p>A great tool to organize and unifiy work.</p></li>
+          <li class="dot"><p>Can be used to make tests or do experimental stuff.</p></li>
+          <li class="dot"><p>Did I said interaction through the CLI?</p></li>
+        </ul>
+      </div>
+
+      <div class="step slide" data-x="7500">
+        <div class="slide-title">Vagrant</div>
+        <p class="slide-subtitle">For Visual Designers, UI devs and other roles:</p>
+        <ul>
+          <li class="dot"><p>Allows them to be abstracted from the environment setup.</p></li>
+          <li class="dot"><p>Decrease the impact each time config/settings change are required on the env.</p></li>
+        </ul>
+      </div>
+
+      <div class="step slide" data-x="9000">
+        <div class="slide-title">Vagrant</div>
+        <p class="slide-subtitle">Advantages:</p>
+        <ul>
+          <li class="dot"><p>Customizable.</p></li>
+          <li class="dot"><p>Simple commands set.</p></li>            
+          <li class="dot"><p>Allows you to same environment (as possible) than Production env.</p></li>        
+          <li class="dot"><p>Allows you to have different envs. per project, with its own OS/settings.</p></li>            
+          <li class="dot"><p>Great options to choose for provisioner.</p></li>            
+          <li class="dot"><p>None conflict with sistems VCS lice Git, Mercurial, SVN.</p></li>            
+          <li class="dot"><p>Re-usable and portable environments.</p></li>
+        </ul>    
+      </div>
+      
+      <div class="step slide" data-x="10500">
+        <div class="slide-title">Vagrant</div>
+        <p class="slide-subtitle">Disadvantages:</p>
+        <ul>
+          <li class="dot"><p>Use of VM => less resources for host machine.</p></li>
+          <li class="dot"><p>Compatible with several platforms, but has some limitations (NFS with Microsoft)</p></li>                      
+          <li class="dot"><p>It forces the Dev/Sysadmin to learn about one of the provisioners.</p></li>   
+          <li class="dot"><p>On teams (specially with devs) people with less/none experience on setup envs, have less chance to learn about this. (if they are not curious)</p></li>   
+        </ul>      
+      </div>
+
+      <div class="step slide" data-x="12000">
+        <div class="slide-title">Vagrant</div>
+        <p class="slide-subtitle">Some concepts:</p>
+        <ul>        
+          <li class="dot">
+            <p><b>Box:</b>  package format for Vagrant environments.</p>
+            <ul>
+              <li><p>vagrant box add precise32 http://files.vagrantup.com/precise32.box</p></li>
+            </ul>
+          </li>          
+          <li class="dot"><p><b>Synced folders:</b> enables Vagrant to sync a folder on the host machine to the guest machine, by default: /vagrant</p></li>
+          <li class="dot"><p><b>Provisioning:</b> allow you to automatically install software, alter configurations, and more on the machine.</p></li>
+        </ul>      
+      </div>
+
+      <div class="step slide wide-diagram" data-x="13500">
+        <img class="slide-img vagrant-diagram" src="img/vagrant-diagram.jpg" alt="Vagrant diagram" title="Vagrant diagram">
+      </div>
+
+      <div class="step slide" data-x="15000">
+        <div class="slide-title">Vagrant</div>
+        <p class="slide-subtitle">Installation:</p>
+        <ul>
+          <li class="dot"><p>Install a virtualization software (recommend: VirtualBox).</p></li>
+          <li class="dot">
+            <p>Install Vagrant. Installer available at: <a href="http://downloads.vagrantup.com" target="_blank">downloads.vagrantup.com</a></p><br/>
+              <ul>
+                <li><p>Windows: instalan el archivo Vagrant_1.3.5.msi</p></li><br/>
+                <li><p>Debian/Ubuntu: <br>sudo dpkg -i vagrant_1.3.5_x86_64.deb</p></li><br/>
+              </ul>
+          </li>
+          <li class="dot"><p>Listo!</p></li>
+        </ul>
+      </div>
+      
+      <div class="step slide" data-x="15000" data-y="1000">
+        <div class="slide-title">A short demonstration.</div>
+        <p class="slide-subtitle">Hi my name is Luis and this is doing a live demo...</p>
+        
+      </div>
+
+      <div class="step slide" data-x="16500">
+        <div class="slide-title">Vagrant</div>
+        <p class="slide-subtitle">Vagrant commands:</p>
+        <ul>
+          <li class="dot"><p><b>vagrant init</b>: initializes current directory as a Vagrant environment, creating an initial Vagrantfile if one doesn't already exist.</p></li>
+          <li class="dot"><p><b>vagrant up</b>: creates and configures guest machines according to the Vagrantfile.</p></li>
+          <li class="dot"><p><b>vagrant provision:</b> runs any configured provisioners against the guest machine.</p></li>
+          <li class="dot"><p><b>vagrant halt:</b> shuts down the running machine.</p></li>
+          <li class="dot"><p><b>vagrant reload:</b> same as: vagrant halt + vagrant up</p></li>
+          <li class="dot"><p><b>vagrant ssh:</b> ssh to the running machine.</p></li>
+        </ul>
+      </div>
+
+      <div class="step slide" data-x="18000">
+        <div class="slide-title">Vagrant</div>
+        <p class="slide-subtitle">Typical command workflow:</p>
+        <ul>
+          <li class="dot"><p><b>vagrant init</b>: in case of start on proyect.</p></li>
+          <li class="dot"><p><b>vagrant up</b>: to create & config guest machine or to turn on the machine.</p></li>
+          <li class="dot"><p><b>vagrant provision</b>: to run all or a specific provisioner.</p></li>
+          <li class="dot"><p><b>vagrant ssh</b>: for remote access to guest machince.</p></li>
+          <li class="dot"><p>...</p></li>
+          <li class="dot"><p>Work as usual on the environment.</p></li>
+          <li class="dot"><p>...</p></li>        
+          <li class="dot"><p><b>vagrant halt</b>: turn of the machine.</p></li>
+        </ul>
+      </div>
+
+      <div class="step slide" data-x="19500">
+        <div class="slide-title">Vagrant</div>
+        <p class="slide-subtitle">More info:</p>
+        <ul>
+          <li class="dot"><p><a href="http://www.vagrantup.com" target="_blank">http://www.vagrantup.com</a> - Website de Vagrant</p></li>
+          <li class="dot"><p><a href="http://www.vagrantbox.es" target="_blank">http://www.vagrantbox.es</a> - List of Cagrant boxes.</p></li>
+          <li class="dot"><p><a href="https://puphpet.com" target="_blank">https://puphpet.com</a> - Simple GUI to set up virtual machines using Vagrant.</p></li>
+          <li class="dot"><p><a href="http://mywiki.wooledge.org/BashGuide" target="_blank">http://mywiki.wooledge.org/BashGuide</a> Online guide for Bash scripting.</p></li>
+          <li class="dot"><p><a href="http://docs.puppetlabs.com" target="_blank">http://docs.puppetlabs.com/</a> - Oficial docs for Puppet.</p></li>
+          <li class="dot"><p><a href="http://example42.com" target="_blank">http://example42.com</a> - Examples, tutorials for Puppet.</p></li>
+        </ul>
+      </div>
+      
+      <div class="step slide" data-x="21000">
+        <q class="single-msje-slide"><p class="center">Questions?</p></q>
+      </div>
+      
+      <div class="step slide" data-x="22500">
+        <q class="single-msje-slide"><p class="center">Thanks!</p></q>
+      </div>
+    </div>
+
+    <div class="hint">
+        <p>Use a spacebar or arrow keys to navigate</p>
+    </div>
+    <script>
+    if ("ontouchstart" in document.documentElement) { 
+        document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+    }
+    </script>
+    <script src="js/impress.js"></script>
+    <script>
+      impress().init();
+      document.addEventListener('impress:stepenter', function(e){
+        if (typeof timing !== 'undefined') clearInterval(timing);
+        var duration = (e.target.getAttribute('data-transition-duration') ? e.target.getAttribute('data-transition-duration') : 2000); // use the set duration or fallback to 2000ms
+        timing = setInterval(impress.next, duration);
+      });
+    </script>
+  </body>
+</html>
