@@ -74,3 +74,13 @@ root {
 .sorry {
   font-size: 40px;
 }
+
+.slide .company-logo {
+  background: transparent url(../img/42mate-logo.png) no-repeat center;
+}
+
+q.autor-line {
+  margin-top: 50px;
+  line-height: 45px;
+  text-align: center;
+}
