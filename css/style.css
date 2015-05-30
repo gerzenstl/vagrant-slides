@@ -57,6 +57,10 @@ root {
 .slide-img.vagrant-workflow {
   margin-top: 120px;
 }
+.slide-img.vagrant-workflow.animation-gif {
+  margin: 120px auto 0;
+  display: block;
+}
 
 .step.slide.wide-diagram {
   padding: 0 64px;

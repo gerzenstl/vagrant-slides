@@ -31,21 +31,26 @@
       </div>
       
       <div class="step slide" data-y="1000">
-        <div class="slide-title">Antes de comenzar...</div>
-        <q><p>Unas preguntas.<p></q>
+        <div class="slide-title">Antes de comenzar, unas preguntas ...</div>
+        <q><p><p></q>
+        <q><p>No sean timidos al responder.<p></q>
+      </div>
+      
+      <div class="step slide" data-y="2000">
+        <div class="slide-title">Espectativa vs. Realidad</div>        
+        <img class="slide-img vagrant-workflow animation-gif" src="img/simpsons-barbeque-pit-kit.gif" alt="Vagrant workflow" title="Vagrant workflow">
       </div>
       
       <div class="step slide" data-x="1500">
         <div class="slide-title">Vagrant</div>
-        <q><p>“Herramienta que permite crear, configurar y reproducir entornos de desarrollo virtuales, con 
-          un worklfow consistente y orientado a la automatización.”<p></q>
+        <q><p>“Herramienta que permite construir entornos de desarrollos, isolados en
+            maquinas virtuales y orientado a la automatización.”<p></q>
       </div>
       
       <div class="step slide" data-x="3000">
         <div class="slide-title">Vagrant</div>
         <ul>
           <li class="dot"><p>Creado por Mitchell Hashimoto.</p></li>
-          <li class="dot"><p>Permite configurar y reproducir entornos de trabajo en forma automatizada.</p></li>
           <li class="dot">
             <p>Utiliza tecnologías standards:</p>
             <ul>
@@ -53,8 +58,9 @@
               <li><p>Provision en shell scripts, Chef y Puppet.</p></li>
             </ul>
           </li>
-          <li class="dot"><p>Cada vez más popular.</p></li>
-          <li class="dot"><p>Buena documentación .</p></li>
+          <li class="dot"><p>Agnostico al lenguaje de programacion/framework usado.</p></li>
+          <li class="dot"><p>Hoy en dia, bastante popular.</p></li>
+          <li class="dot"><p>Buena documentación.</p></li>
           <li class="dot"><p>Soporte de la comunidad.</p></li>
         </ul>
       </div>
@@ -118,10 +124,10 @@
         <ul>
           <li class="dot"><p>Customizable.</p></li>
           <li class="dot"><p>Set de comandos simples.</p></li>            
-          <li class="dot"><p>Permite tener entornos sincronizados con el de Producción (casi en todo lo posible).</p></li>        
+          <li class="dot"><p>Permite tener entornos muy similares al de Producción (en todo lo posible).</p></li>        
           <li class="dot"><p>Posibilidad de tener una VM por proyecto/aplicación, cada una con distintas configuraciones.</p></li>            
-          <li class="dot"><p>Flexibilidad a la hora de elegir un provisioner</p></li>            
-          <li class="dot"><p>No hay conflicto con sist. de control de versiones como Git, SVN o Mercurial.</p></li>            
+          <li class="dot"><p>Flexibilidad a la hora de elegir con que herramienta automatizar (provisioner).</p></li>            
+          <li class="dot"><p>No hay conflicto con Git, SVN o Mercurial.</p></li>            
           <li class="dot"><p>Entornos portables y reusables.</p></li>
         </ul>    
       </div>
@@ -143,14 +149,14 @@
         <p class="slide-subtitle">Algunos conceptos:</p>
         <ul>        
           <li class="dot">
-            <p><b>Box:</b> imagen de un Sist. Operativo a partir del cual pueden clonarse maquinas.</p>
+            <p><b>Box:</b> imagen de Sist. Operativo a partir del cual pueden generar VMs.</p>
             <ul>
               <li><p>vagrant box add precise32 http://files.vagrantup.com/precise32.box</p></li>
             </ul>
           </li>          
           <li class="dot"><p><b>Carpetas sincronizadas:</b> Vagrant sincroniza automáticamente la carpeta 
               donde esta el Vagrantfile con una carpeta en la VM, por default: /vagrant</p></li>
-          <li class="dot"><p><b>Provisioning:</b> (o aprovisionamiento) herramienta que provee instalación y configuración de recursos a un sistema operativo.</p></li>
+          <li class="dot"><p><b>Provisioning:</b> (o aprovisionamiento) herramienta que permite instalar y configurar servidores en forma automatica.</p></li>
         </ul>      
       </div>
 
@@ -164,20 +170,13 @@
         <ul>
           <li class="dot"><p>Instalar un software de virtualización (recomendable: VirtualBox).</p></li>
           <li class="dot">
-            <p>Instalar Vagrant. Instalador disponible en : <a href="http://downloads.vagrantup.com" target="_blank">downloads.vagrantup.com</a></p><br/>
+            <p>Bajar instalador desde: <a href="http://www.vagrantup.com/downloads.html" target="_blank">http://www.vagrantup.com/downloads.html</a></p><br/>
               <ul>
-                <li><p>En Windows: instalan el archivo Vagrant_1.3.5.msi</p></li><br/>
-                <li><p>En Debian/Ubuntu: <br>sudo dpkg -i vagrant_1.3.5_x86_64.deb</p></li><br/>
+                <li><p>En Windows, instalan con el archivo vagrant_1.7.2.msi</p></li><br/>
+                <li><p>En Debian/Ubuntu, ejecutan: <br>sudo dpkg -i vagrant_1.7.2_x86_64.deb</p></li><br/>
               </ul>
           </li>
-          <li class="dot"><p>Listo!</p></li>
         </ul>
-      </div>
-      
-      <div class="step slide" data-x="15000" data-y="1000">
-        <div class="slide-title">Una breve demostración</div>
-        <p class="slide-subtitle">Hola me llamo Luis y esto es una demo...</p>
-        
       </div>
 
       <div class="step slide" data-x="16500">
@@ -195,7 +194,7 @@
 
       <div class="step slide" data-x="18000">
         <div class="slide-title">Vagrant</div>
-        <p class="slide-subtitle">Típico workflow de comandos:</p>
+        <p class="slide-subtitle">Workflow de comandos:</p>
         <ul>
           <li class="dot"><p><b>vagrant init</b>: solo se lo ejecuta una sola vez.</p></li>
           <li class="dot"><p><b>vagrant up</b>: inicializa la VM</p></li>
